@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Movies App</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="cytoscape-context-menus.css" rel="stylesheet" type="text/css" />
+  
+</head>
+
+<div id="container">
+      <div id="banner">
+        <div id="left">
+        <h1>Layouts</h1>
+        <button onclick="cose_bilkent()">cose-Bilkent</button>
+        <button onclick="cose()">COSE</button>
+        <button onclick="random()">Random</button>
+      </div>
+      <div id="right">
+        <h1>Node Information</h1>
+        <div id="inner">
+        <p id="actor">Actors : Circle</p>
+        <p id="movie">Movies : Squares</p>
+        </div>
+        <div id="inner">
+        <p id="director">Directors : Diamonds</p>
+        <p id="writer">Writers : Hexagons</p>
+        </div>
+      </div>
+      </div>
+      <div id="cy"></div>
+</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.5.7/shim.min.js"></script>
+  <script src="https://unpkg.com/layout-base/layout-base.js"></script>
+  <script src="https://unpkg.com/cose-base/cose-base.js"></script>
+  <script src='cytoscape.min.js'></script>
+  <script src="cytoscape-context-menu.js"></script>
+  <script src="cytoscape-cose-bilkent.js"></script>
+  <script src="./script.js"></script>
+  <script src="./neo4j-driver.js" onload="initialized()"></script>
+  
+</html>

@@ -1,0 +1,39 @@
+#cy {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 150px;
+  left: 0px;
+}
+#banner{
+  display: flex;
+  flex-direction: row;
+}
+#left{
+  display: block;
+  width: 50%;
+}
+#right{
+  display: inline-block;
+  width: 35%;
+}
+#inner{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 0px;
+  line-height: 10px;
+}
+#actor{
+  color: #F24C4C !important;
+}
+#movie{
+  color: #EC9B3B !important;
+}
+#director{
+  color: #1AC8ED !important;
+}
+#writer{
+  color: #6A4C93 !important;
+}
